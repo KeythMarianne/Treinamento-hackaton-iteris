@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titulo da página</title>
+    <script>
+        let a = "carro";
+        var b = 1;
+        const c = "casa";
+
+        function clickNoBotao(){
+            alert("ALERTA!")
+        }
+
+        function atualizacaoTexto(){
+            let input = document.getElementById("meuinput");
+            let p = document.getElementById("para");
+
+            p.textContent = input.value;
+
+            console.log("oi");
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <h1>Titulo principal</h1>
+        <h2>Titulo</h2>
+        <p id="para">Qualquer texto - parágrafo</p>
+        <span>Informação qualquer - texto solto na página</span>
+    </div>
+
+    <img src="img1.png"/>
+    <a href ="https://google.com.br">link para o google</a>
+
+    <div>
+        <input type="date"/>
+        <input id="meuinput" type="text" oninput="atualizacaoTexto()" />
+        <select>
+            <option>Opção 1</option>
+            <option>Opção 2</option>
+            <option>Opção 3</option>
+        </select>
+        <button onclick="clickNoBotao()">texto do botão</button>
+    </div>
+</body>
+</html>
